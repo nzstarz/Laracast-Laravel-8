@@ -3,7 +3,7 @@
     <head>
         
         <title>My Blog</title>
-       <!--  (Laravel 8) This commented link below doesn't work as tutorial says in laracasts
+       <!-- (Laravel 8) This commented link below doesn't work as tutorial says in laracasts
         <link rel="stylesheet" herf="/app.css"> try one of them from below three (from stackoverflow)
 
         <link rel="stylesheet" type="text/css" href="{{ url('/app.css') }}"> -->
@@ -14,14 +14,18 @@
        <!-- This one work as well
            <link href="{{ asset('/app.css') }}" rel="stylesheet">-->
 
-          
-        
-
     
     </head>
     <body>
-        <h1>Hello World</h1>
+    
+        <article>
         
-        <script src="/app.js"></script>
+                       <?=$post; ?>
+        </article>
+
+       
+        <a href="{!!url('/'); !!}">Go Back</a>
+       
+      <!--  <script src="/app.js"></script>-->
     </body>
 </html>
