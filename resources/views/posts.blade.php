@@ -22,7 +22,7 @@
     <body>
         <article>
        <!--<h1><a herf="/post"> My First Post</a></h1>, Simple html linking seems to be not working in laravel 8, got a solution from snapey(https://laracasts.com/discuss/channels/general-discussion/how-to-create-link-with-blade-templating)-->
-        <h1> <a href="{!!url('/post/my-first-post'); !!}">My First Post</a></h1>
+        <h1> <a href="{!!url('/posts/my-first-post'); !!}">My First Post</a></h1>
        
             <p> সাম্প্রতিক কয়েকটি হত্যার ঘটনায় পরিবারের সদস্যদের মধ্যে আন্তসম্পর্কের ঘাটতি, পারস্পরিক সন্দেহ-অবিশ্বাস, ক্ষোভ ও হতাশাকে প্রধান কারণ হিসেবে চিহ্নিত করা হয়েছে। গত তিন মাসে গণমাধ্যমে প্রকাশিত ১৪টি খুনের ঘটনা বিশ্লেষণ করে এমনটি বলেছেন তদন্তসংশ্লিষ্ট পুলিশ কর্মকর্তারা।
 
@@ -31,7 +31,7 @@
         </article>
 
         <article>
-        <h1> <a href="{!!url('/post/my-second-post'); !!}">My Second Post</a></h1>
+        <h1> <a href="{!!url('/posts/my-second-post'); !!}">My Second Post</a></h1>
                 <p> The Bangladesh Bank introduced the Green Transformation Fund (GTF) fund in 2016 to provide finance for environment-friendly infrastructures in export-oriented industries, but factory owners in sectors other than textiles have shown little interest in borrowing from it.
 
                     Loans disbursed from the Tk3,720 crore fund stood at only Tk778 crore as of December last year, which was 21% of the total fund size.
@@ -41,7 +41,7 @@
         </article>
 
         <article>
-        <h1> <a href="{!!url('/post/my-third-post'); !!}">My Third Post</a></h1>
+        <h1> <a href="{!!url('/posts/my-third-post'); !!}">My Third Post</a></h1>
                 <p> رفضت إيران مطالب الوكالة الدولية للطاقة الذرية بالرد الفوري على طلبها بتمديد الاتفاق الذي انتهى مؤخرا بشأن مراقبة المواقع النووية الإيرانية.
 
 وقال رئيس الوكالة الدولية للطاقة الذرية، رافاييل غروسي، إنه من الضروري أن يبقى المفتشون قادرين على جمع البيانات  .

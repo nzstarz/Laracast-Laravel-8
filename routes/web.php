@@ -18,17 +18,30 @@ Route::get('/', function () {
 });
 
 //Use wildcard in {}
-Route::get('post/{posts}', function ($slug) {
+Route::get('posts/{post}', function ($slug) {
+
+
     $path = __DIR__ . "/../resources/posts/{$slug}.html";
 
-    if(! file_exists($path)){
-        return redirect ('/');
-       // abort(404);
-    }
-    $post = file_get_contents($path);
-  
-    return view('post', [
-        'post' => $post
-      
-   ]);
+        if(! file_exists($path)){
+
+            return redirect
+            
+
+          //  ddd('file does not exist');
+
+            abort(404);
+        }
+
+                $post = file_get_contents($path);
+   // $post = file_get_contents(__DIR__ ."/../resources/posts/{$slug}.html");
+
+   //          return  view ('post', [
+    //        'post' => $post
+   // 
+   // 'post'=> file_get_contents(__DIR__ .'/../resources/posts/my-first-post.html')
+
+
+  //  ]);
+
 });
